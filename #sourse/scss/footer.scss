@@ -1,0 +1,144 @@
+.footer {
+	background: url(../img/footer/bg.jpg) center / cover no-repeat;
+	margin-top: 100px;
+	// .footer_inner
+	&_inner {
+		padding-top: 110px;
+	}
+	// .footer_row
+	&_row {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+
+		@media (max-width: 900px) {
+			grid-template-columns: 1fr;
+		}
+	}
+	// .footer_subtitle
+	&_subtitle {
+		margin-bottom: 10px;
+	}
+	// .footer_title
+	&_title {
+		margin-bottom: 80px;
+		color: white;
+	}
+	// .footer_map
+	&_map {
+		#map {
+			min-height: 369px;
+			height: 100%;
+			width: 100%;
+
+			@media (max-width: 450px) {
+				min-height: 300px;
+			}
+		}
+	}
+	// .footer_content
+	&_content {
+	}
+	// .footer_item
+	&_item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 29px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (max-width: 550px) {
+			flex-direction: column;
+			align-items: start;
+			grid-gap: 15px;
+		}
+	}
+	// .footer_label
+	&_label {
+		font-size: 17px;
+		font-weight: 800;
+		line-height: $lh;
+		color: wheat;
+		width: 200px;
+		flex: 0 0 200px;
+
+		@media (max-width: 550px) {
+			flex: 1 1 auto;
+			width: auto;
+		}
+	}
+	// .footer_tel
+	&_tel {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1;
+		color: $blue;
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	// .footer_email
+	&_email {
+		font-size: 18px;
+		line-height: 25 / 18 * 100%;
+		color: $blue;
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	// .footer_text
+	&_text {
+		font-size: 18px;
+		line-height: 25 / 18 * 100%;
+		color: white;
+	}
+	// .footer_social
+	&_social {
+		display: flex;
+		align-items: center;
+		grid-gap: 26px;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 30px;
+			height: 30px;
+			background: $bg;
+			border-radius: 50%;
+		}
+	}
+	// .footer_bottom
+	&_bottom {
+		padding: 30px 0;
+		margin-top: 50px;
+
+		border-top: 1px solid $blue;
+	}
+	// .footer_binner
+	&_binner {
+		display: flex;
+		align-items: center;
+		grid-gap: 25px 100px;
+		flex-wrap: wrap;
+
+		a {
+			font-size: 13px;
+			line-height: $lh;
+			color: #e9e9e9;
+		}
+		a:nth-child(2) {
+			flex: 1 1 auto;
+		}
+	}
+}
